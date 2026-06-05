@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations — Discovery Italy Tours</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .dest-full-card { display:grid; grid-template-columns:1fr 1fr; gap:0; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); margin-bottom:2.5rem; }
+    .dest-full-card:nth-child(even) .dest-card-img { order:2; }
+    .dest-full-card:nth-child(even) .dest-card-body { order:1; }
+    .dest-card-img { min-height:340px; display:flex; align-items:center; justify-content:center; font-size:5rem; position:relative; }
+    .dest-card-body { padding:3rem; display:flex; flex-direction:column; justify-content:center; }
+    .dest-card-body h2 { margin-bottom:0.6rem; font-size:2rem; }
+    .dest-card-body .tagline { font-family:var(--font-display); font-style:italic; color:var(--gold); font-size:1rem; margin-bottom:1rem; }
+    .dest-card-body p { font-size:0.88rem; margin-bottom:1.5rem; }
+    .exp-pills { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+    .pill { font-size:0.72rem; padding:0.3rem 0.75rem; border-radius:20px; background:var(--cream); color:var(--text-muted); border:1px solid var(--border); }
+    @media(max-width:700px){ .dest-full-card{grid-template-columns:1fr;} .dest-card-img{min-height:200px;} .dest-full-card:nth-child(even) .dest-card-img{order:0;} .dest-full-card:nth-child(even) .dest-card-body{order:0;} }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo-icon.jpg" alt="Discovery Italy Tours" />
+        <span class="nav-logo-wordmark">DISCOVERY<br>ITALY</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="partner-hub.html">Partner Hub</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="partner-hub.html" class="nav-login">Partner login</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:rgba(184,150,90,0.8);">Where we operate</span>
+      <h1>Seven destinations.<br>One Italy. Infinite possibilities.</h1>
+      <p>From the ancient temples of Sicily to the silk-smooth waters of Lake Como. We know every corner.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div id="sicily" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-sicily"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">Our heartland</span>
+          <h2>Sicily</h2>
+          <p class="tagline">"Ancient, volcanic, wildly delicious — and closer to New York than you think."</p>
+          <p>Three thousand years of history packed into one island. Greek temples, Arab street markets, Norman cathedrals, volcanic landscapes, and a cuisine unlike anywhere else in Italy. We've been operating here since 2001. We know Sicily the way no guidebook ever will.</p>
+          <div class="exp-pills">
+            <span class="pill">Sunset sailing</span>
+            <span class="pill">Palermo street food</span>
+            <span class="pill">Valley of the Temples</span>
+            <span class="pill">Etna volcano hike</span>
+            <span class="pill">Wine tasting</span>
+            <span class="pill">Cooking class</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="sicily.html" class="btn btn-green btn-arrow">Explore Sicily</a>
+            <a href="contact.html" class="btn btn-outline-dark">Inquire</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="amalfi" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-amalfi"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">Southern drama</span>
+          <h2>Amalfi Coast</h2>
+          <p class="tagline">"Walk it like the gods intended — not by bus, not from a boat, but on foot."</p>
+          <p>Cliffside villages, turquoise water, lemon groves, and hikes that make the Instagram shots feel earned. We combine the iconic with the unexpected — the Path of the Gods at dawn, a private boat at dusk, and a cooking class somewhere in between.</p>
+          <div class="exp-pills">
+            <span class="pill">Path of the Gods hike</span>
+            <span class="pill">Private boat tour</span>
+            <span class="pill">Cliffside cooking class</span>
+            <span class="pill">Wine tasting in Ravello</span>
+            <span class="pill">Positano sunrise walk</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-green btn-arrow">Inquire about Amalfi</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="tuscany" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-tuscany"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">Beyond the icons</span>
+          <h2>Tuscany</h2>
+          <p class="tagline">"Think you know Tuscany? Think again."</p>
+          <p>Florence, Chianti, the Leaning Tower — yes, all of that. But also grape stomping in a family vineyard, a vintage Fiat 500 through the Crete Senesi, truffle hunting at dawn in the San Miniato hills, and a private luxury picnic in the heart of Chianti at sunset.</p>
+          <div class="exp-pills">
+            <span class="pill">Fiat 500 Chianti drive</span>
+            <span class="pill">Grape stomping</span>
+            <span class="pill">Truffle hunting</span>
+            <span class="pill">Marble quarry — Carrara</span>
+            <span class="pill">Private luxury picnic</span>
+            <span class="pill">Hot air balloon</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-green btn-arrow">Inquire about Tuscany</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="rome" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-rome"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">The eternal city</span>
+          <h2>Rome</h2>
+          <p class="tagline">"The past is alive. The future is already cooking."</p>
+          <p>Rome is not a museum. Your clients don't need a tour of the Colosseum. They need to cook pasta with a Roman grandmother in the morning and sit under Michelin stars in the evening. We can arrange both — and everything in between.</p>
+          <div class="exp-pills">
+            <span class="pill">Cooking with nonna</span>
+            <span class="pill">Street food tour</span>
+            <span class="pill">Colosseum early access</span>
+            <span class="pill">Vatican at dawn</span>
+            <span class="pill">Golf cart tour</span>
+            <span class="pill">Michelin dinner</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-green btn-arrow">Inquire about Rome</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="como" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-como"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">Northern elegance</span>
+          <h2>Lake Como</h2>
+          <p class="tagline">"Welcome to Lake Como, reimagined."</p>
+          <p>Beyond the celebrity villas is a lake that rewards the curious. Kayak at dawn when the water is mirror-flat and the mountains are pink. Take the funicular to hidden hilltop villages. Find the thermal spa that isn't on any list. Lake Como is spectacular — and we know the version of it most visitors never discover.</p>
+          <div class="exp-pills">
+            <span class="pill">Dawn kayak tour</span>
+            <span class="pill">Hilltop village walk</span>
+            <span class="pill">Thermal wellness retreat</span>
+            <span class="pill">Villa Balbianello</span>
+            <span class="pill">Three-branch boat tour</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-green btn-arrow">Inquire about Lake Como</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="foodvalley" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-food"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">Italy's pantry</span>
+          <h2>Food Valley</h2>
+          <p class="tagline">"Parmigiano, Prosciutto, Ferrari — all in one extraordinary day."</p>
+          <p>Emilia-Romagna is where Parmigiano Reggiano is made, where Prosciutto di Parma ages in ancient cellars, where balsamic vinegar takes 25 years to become extraordinary. It's also where Ferrari builds racing cars. Only in Italy.</p>
+          <div class="exp-pills">
+            <span class="pill">Parmigiano dairy visit</span>
+            <span class="pill">Prosciutto cellar tour</span>
+            <span class="pill">Balsamic acetaia</span>
+            <span class="pill">Ferrari Museum</span>
+            <span class="pill">Pasta class in Bologna</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-green btn-arrow">Inquire about Food Valley</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="milan" class="dest-full-card fade-up">
+        <div class="dest-card-img dest-bg-milan"></div>
+        <div class="dest-card-body">
+          <span class="eyebrow">The unexpected Italy</span>
+          <h2>Milan</h2>
+          <p class="tagline">"Italy's best-kept secret."</p>
+          <p>Everyone visits. Few people discover. Milan beyond the Duomo is a city of design studios, neighborhood aperitivo bars, hidden courtyards, extraordinary food markets, and a contemporary art scene that rivals any European capital. We know where the Milanese actually go.</p>
+          <div class="exp-pills">
+            <span class="pill">Navigli canal walk</span>
+            <span class="pill">Aperitivo tasting tour</span>
+            <span class="pill">Design district visit</span>
+            <span class="pill">Brera gallery access</span>
+            <span class="pill">Hidden trattoria dinner</span>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-green btn-arrow">Inquire about Milan</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-cream text-center">
+    <div class="container-narrow">
+      <span class="eyebrow">Not sure where to start?</span>
+      <h2>We'll help you find the right fit.</h2>
+      <p style="margin:0.8rem auto 2rem;max-width:460px;">Tell us about your client — their interests, travel style, budget — and we'll recommend the perfect Italian experience. Custom quote in 24 hours.</p>
+      <a href="contact.html" class="btn btn-green btn-arrow">Talk to our team</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="logo-horizontal.jpg" alt="Discovery Italy Tours" /><p class="footer-tagline">Italy, done right.</p><p>New York &amp; Palermo, Sicily</p></div>
+        <div class="footer-col"><h5>SITE</h5><a href="index.html">Home</a><a href="about.html">About us</a><a href="how-it-works.html">How it works</a><a href="partner-hub.html">Partner Hub</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>DESTINATIONS</h5><a href="sicily.html">Sicily</a><a href="destinations.html#amalfi">Amalfi Coast</a><a href="destinations.html#tuscany">Tuscany</a><a href="destinations.html#rome">Rome</a><a href="destinations.html#como">Lake Como</a><a href="destinations.html#foodvalley">Food Valley</a><a href="destinations.html#milan">Milan</a></div>
+        <div class="footer-col"><h5>CONTACT</h5><p>booking@discoveryitaly.net</p><p>+1.667.229.9636</p></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Discovery Italy Tours Inc. All rights reserved.</p><div><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
