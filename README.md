@@ -1,62 +1,47 @@
-# Discovery Italy Tours — Website Prototype
+# Discovery Italy Tours — Website v2
 
-A full multi-page website prototype for Discovery Italy Tours.
+Updated mockup with all changes from DiscoveryItaly_Memo_Agenzia_v3.
 
-## Pages
+## What changed from v1
 
-| File | Page |
-|------|------|
-| `index.html` | Homepage |
-| `about.html` | About Us — founder story |
-| `how-it-works.html` | How It Works — agent process & FAQ |
-| `destinations.html` | Destinations hub — all 7 destinations |
-| `sicily.html` | Sicily — full destination page |
-| `partner-hub.html` | Partner Hub — academy & toolkit preview |
-| `contact.html` | Contact — agent form + traveler form |
+**Navigation (all pages)**
+- "Service" → "Cosa fare" (new page: experiences.html)
+- "Standard Tour Packages" → "Dove" (destinations.html)
+- "Your Personal Tour" → "Inspiration" (new page: inspiration.html)
+- "How it works" merged into Concierge + About
+- New page: concierge.html (replaces contact.html for main CTA)
+- "Partner Hub" moved to top-right button "Partner Login"
+- "About" → "About Us"
 
-## How to deploy on GitHub Pages
+**Homepage**
+- Hero: new headline, updated stats ($1.5M / 24h / 7 destinations)
+- "Three ways to work" → Four entry doors (Cosa fare / Dove / Inspiration / Concierge)
+- New: Lego metaphor section with three category tiles
+- Destinations: updated to 7 correct destinations (Venice replaces Food Valley)
+- Proof points: updated pricing + DMC language
 
-1. Create a new GitHub repository (public)
-2. Upload all files — keep the folder structure intact (`css/`, `js/`, logo files, all `.html` files)
-3. Go to **Settings → Pages**
-4. Under **Source**, select `main` branch and `/ (root)`
-5. Click **Save**
-6. Your site will be live at `https://yourusername.github.io/repositoryname/`
+**Pricing (all pages)**
+- Removed all "instant net rates" and "tour builder" references
+- Now: all-inclusive quote after itinerary is complete, commission agreed upfront and built in
 
-## File structure
+**About Us**
+- Mission statement added
+- Origin story updated (Simona joining in 2023)
+- 5 differentiators section added
+- Team: Sebastiano + Vincenzo + **Simona Ciceraro** (new)
+- DMC language throughout
 
-```
-/
-├── index.html
-├── about.html
-├── how-it-works.html
-├── destinations.html
-├── sicily.html
-├── partner-hub.html
-├── contact.html
-├── logo-icon.jpg
-├── logo-horizontal.jpg
-├── logo-vertical.jpg
-├── css/
-│   └── style.css
-└── js/
-    └── main.js
-```
+**New pages**
+- experiences.html (Cosa fare — 3 categories)
+- inspiration.html (editorial itineraries)
+- concierge.html (dual form: agent + traveler)
 
-## Notes for the web agency
+## Deploy to GitHub Pages
 
-- Replace colored background placeholders with real photography (hero sections, destination tiles, split-image blocks)
-- The font stack uses Google Fonts (Cormorant Garamond + DM Sans) — loaded via CDN, works offline with fallbacks
-- All forms currently show a success message on submit — connect to your preferred form handler (Formspree, Netlify Forms, or Wix equivalent)
-- The `Partner Login` button links to `partner-hub.html` — update to your actual auth URL when members area is ready
-- Colors are defined as CSS variables in `css/style.css` — easy to adjust globally
+1. Create a public repo on github.com
+2. Upload all files from this folder
+3. Settings → Pages → Source: main branch / root
+4. Live in ~60 seconds at https://username.github.io/repo-name/
 
-## Brand colors
-
-| Name | Hex |
-|------|-----|
-| Green (primary) | `#1B5C3A` |
-| Green dark | `#103624` |
-| Gold (accent) | `#B8965A` |
-| Cream (background) | `#F8F4EE` |
-| Dark (text) | `#1C1C1A` |
+## Contact
+booking@discoveryitaly.net | +1.667.229.9636
